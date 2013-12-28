@@ -2,7 +2,7 @@ from datetime import datetime
 from django import forms
 from .models import Education
 
-YEAR_CHOICES = [i for i in xrange(1900, datetime.now().year)]
+YEAR_CHOICES = [(i, i) for i in xrange(1900, datetime.now().year)]
 
 
 class EducationForm(forms.ModelForm):
